@@ -28,7 +28,7 @@
         - Description 1.
         - Description 2.-->
 
-- title: Experience
+<!-- - title: Experience
   type: time_table
   contents:
     - title: Professor of Theoretical Physics
@@ -77,21 +77,20 @@
         - Matteucci Medal
     - year: 2029
       items: 
-        - Max Planck Medal
+        - Max Planck Medal -->
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Theory of Probability
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Percolation
+        - Application in Phlogeny
+    - title: Applied Mathematics
       items:
-        - Description 1.
-        - Description 2.
+        - Fluid Dynamics
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Basketball, Saxphone, Dota2(PC game).
