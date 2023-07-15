@@ -1,7 +1,7 @@
 ---
 layout: post
 title: notes in phylogeny
-date: 2023-07-15 11:12:00-0400
+date: 2023-07-15 11:12:00
 description: the first notes in phylogeny
 tags: formatting math
 categories: sample-posts
