@@ -14,5 +14,5 @@ For those who are not familiar with the notations in graph theory, you can refer
 
 
 ### Definition
-+ A *clique* in $G$ is a subset of vertices for which each pair of vertices is adjacent.
++ A *clique* in $$G$$ is a subset of vertices for which each pair of vertices is adjacent.
 + The *diameter of a graph* $$G=(V,E)$$ is $$\Delta(G)=max\{d(u,v):u,v\in V \}$$
