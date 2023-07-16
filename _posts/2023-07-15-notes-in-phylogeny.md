@@ -7,4 +7,7 @@ tags: formatting math
 categories: sample-posts
 related_posts: false
 ---
-This is the first note for phyogeny, the main content will come from *Phylogeny:Discrete and Random Processes in Evolution* by Mike Steel
+This is the first note for phyogeny, the main content will come from **Phylogeny:Discrete and Random Processes in Evolution** by Mike Steel.
+
+## Graph and Trees
+For those who are not familiar with the notations in graph theory, you can refer to any graph theory textbook or the <a href=>wiki page
