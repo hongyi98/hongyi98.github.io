@@ -28,7 +28,7 @@ Every tree $$T$$ that has more than one vertex always has at least two vertices 
 ### Exercise:
 Show that if a tree $$T$$ has five or more vertices and no vertex of degree 2, then $$T$$ has at least two disjoint pairs of leaves that form cherries of $$T$$.
 
-*Proof*: To prove this we first exhibit a fact about tree: *Any tree $$T$$ is either a star tree or it has two interior vertices $$v_1$$ and $$v_2$$, each of which is adjacent to exactly one nonleaf vertex*, this fact can be seen by considering the endpoints of the longest path formed by interior vertices.
+*Proof:*  To prove this we first exhibit a fact about tree: *Any tree $$T$$ is either a star tree or it has two interior vertices $$v_1$$ and $$v_2$$, each of which is adjacent to exactly one nonleaf vertex*, this fact can be seen by considering the endpoints of the longest path formed by interior vertices.
 
- If it is a star tree, then it has more than 4 leaves, say, four of them are $$v_1,v_2,v_3,v_4$$, and $$\{v_1,v_2\}$$ and $$\{v_3,v_4\}$$ are two disjoint pairs of leaves that form cherries. If it is not a star tree, then by the fact above we have $$v_1$$ and $$v_2$$ that each of them is adjacent to exactly one nonleaf vertex, since we have no vertex of degree 2, each of $$v_1$$ and $$v_2$$ has at least 2 adjacent leaves, in other words, 2 cherries that shares no common vertex.$$\qedsymbol$$
+ If it is a star tree, then it has more than 4 leaves, say, four of them are $$v_1,v_2,v_3,v_4$$, and $$\{v_1,v_2\}$$ and $$\{v_3,v_4\}$$ are two disjoint pairs of leaves that form cherries. If it is not a star tree, then by the fact above we have $$v_1$$ and $$v_2$$ that each of them is adjacent to exactly one nonleaf vertex, since we have no vertex of degree 2, each of $$v_1$$ and $$v_2$$ has at least 2 adjacent leaves, in other words, 2 cherries that shares no common vertex.$$ \blacksquare $$
 
