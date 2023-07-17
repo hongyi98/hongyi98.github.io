@@ -27,7 +27,8 @@ Every tree $$T$$ that has more than one vertex always has at least two vertices 
 
 ##### Helly Property:
 > If $$V_1,V_2,...,V_k \subseteq V$$ comprise the vertex sets of a family of subtrees of a tree $$T$$,and these sets satisfy the property that $$V_i \cap V j  \neq \varnothing$$ , then $$\bigcap^k_{i=1} V_i$$ is also nonempty.
->> Proof of this property can be done by induction on *k*, for the base case $$k=3$$, consider a vertex $$v\in V_1\cap V_2$$ but $$v\notin V_2 \cap V_3$$, and $$w\in V_1\cap V_3$$ but $$w\notin V_2 \cap V_3$$, then you can find a path $$P(V_1,v,w)$$ in $$V_1$$, now consider another pair of vertices  $$i,j\in V_2\cap V_3$$, there is a path $$P(V_2\cap V_3,i,j)$$, if these two pathes have common vertex, then we are done, if they share no common vertex, we can chooes a path $$P(V_2,v,i)$$ and another path $$P(V_3,w,j)$$, they will form a cycle.(This is just an outline, you can fill in the details).
+
+Proof of this property can be done by induction on *k*, for the base case $$k=3$$, consider a vertex $$v\in V_1\cap V_2$$ but $$v\notin V_2 \cap V_3$$, and $$w\in V_1\cap V_3$$ but $$w\notin V_2 \cap V_3$$, then you can find a path $$P(V_1,v,w)$$ in $$V_1$$, now consider another pair of vertices  $$i,j\in V_2\cap V_3$$, there is a path $$P(V_2\cap V_3,i,j)$$, if these two pathes have common vertex, then we are done, if they share no common vertex, we can chooes a path $$P(V_2,v,i)$$ and another path $$P(V_3,w,j)$$, they will form a cycle.(This is just an outline, you can fill in the details).
 
 ### Exercise:
 Show that if a tree $$T$$ has five or more vertices and no vertex of degree 2, then $$T$$ has at least two disjoint pairs of leaves that form cherries of $$T$$.
