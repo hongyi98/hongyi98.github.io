@@ -22,7 +22,8 @@ For those who are not familiar with the notations in graph theory, you can refer
   2. $$T=(V,E)$$ is connected and has $$\vert V \vert -1$$ edges
   3. for any two vertices $$u$$ and $$v$$ of $$T$$,there is a unique path from $$u$$ to $$v$$.
 + A *cherry* in a tree is a pair of leaves that are adjacent to a common interior vertex (this vertex may also be adjacent to other leaves).
-
++ A graph is **chordal** if every cycle of length four or more has a chord (an edge between nonconsecutive vertices of the cycle). Thus a chordal graph either has no cycles (i.e., it is a forest) or its cycles can be broken up into 3-cycles.
+  
 Every tree $$T$$ that has more than one vertex always has at least two vertices of degree one. Such vertices are called *leaves*, whereas the remaining vertices are said to be *interior vertices*. Similarly, an edge that is incident with a leaf is said to be a *pendant edge*; other- wise, it is an interior edge. Every tree with three or more vertices has an interior vertex. A *star tree* is a tree with a single interior vertex that is adjacent to all the leaves.
 
 ##### Helly Property:
@@ -37,6 +38,9 @@ Given a finite graph $$G = (V,E)$$ consisting of $$c_G$$ connected components, t
 cy(G)=|E|−|V|+c_G
 \end{equation}
 
+Notice that $$cy(G) = 0$$ if and only if $$G$$ is a forest (i.e., a tree or a disjoint union of two or more trees), while, in general, $$cy(G)$$ is the minimum number of edges that need to be removed from $$G$$ in order to make it acyclic, so it is sometimes called the *circuit rank* of $$G$$ 
+
+For a graph $$G′$$, let $$\omega(G′)$$ be the number of vertices in the largest clique in $$G′$$. Then the treewidth of $$G$$: $$tw(G)$$ is the minimal value of $$\omega(G′) − 1$$ over all chordal graphs $$G′$$ obtained from $$G$$ by adding zero or more edges. For example, since a tree is (trivially) a chordal graph, it follows that a connected graph $$G$$ is a tree if and only if $$tw(G) = 1$$.
 ### Exercise:
 1.Show that if a tree $$T$$ has five or more vertices and no vertex of degree 2, then $$T$$ has at least two disjoint pairs of leaves that form cherries of $$T$$.
 
