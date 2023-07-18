@@ -28,12 +28,23 @@ Every tree $$T$$ that has more than one vertex always has at least two vertices 
 ##### Helly Property:
 > If $$V_1,V_2,...,V_k \subseteq V$$ comprise the vertex sets of a family of subtrees of a tree $$T$$,and these sets satisfy the property that $$V_i \cap V j  \neq \varnothing$$ , then $$\bigcap^k_{i=1} V_i$$ is also nonempty.
 
-Proof of this property can be done by induction on *k*, for the base case $$k=3$$, consider a vertex $$v\in V_1\cap V_2$$ but $$v\notin V_2 \cap V_3$$, and $$w\in V_1\cap V_3$$ but $$w\notin V_2 \cap V_3$$, then you can find a path $$P(V_1,v,w)$$ in $$V_1$$, now consider another pair of vertices  $$i,j\in V_2\cap V_3$$, there is a path $$P(V_2\cap V_3,i,j)$$, if these two pathes have common vertex, then we are done, if they share no common vertex, we can chooes a path $$P(V_2,v,i)$$ and another path $$P(V_3,w,j)$$, they will form a cycle.(This is just an outline, you can fill in the details).
+Proof of this property can be done by induction on *k*, for the base case $$k=3$$, consider a vertex $$v\in V_1\cap V_2$$ but $$v\notin V_2 \cap V_3$$, and $$w\in V_1\cap V_3$$ but $$w\notin V_2 \cap V_3$$, then you can find a path $$P(V_1;v,w)$$ in $$V_1$$, now consider another pair of vertices  $$i,j\in V_2\cap V_3$$, there is a path $$P(V_2\cap V_3;i,j)$$, if these two pathes have common vertex, then we are done, if they share no common vertex, we can chooes a path $$P(V_2;v,i)$$ and another path $$P(V_3;w,j)$$, they will form a cycle.(This is just an outline, you can fill in the details).
+
+One consequence of the Helly property is that, given a tree $$T$$ , if one takes any three vertices u,v, and w and considers the intersection in $$T$$ of the three paths $$P(T;u,v)$$, $$P(T;u,w)$$, and $$P(T;v,w)$$, then this intersection must be nonempty. Moreover, in this case the intersection consists of just a single vertex, called the median of u,v, and w, denoted $$med_T (u,v,w)$$.
+
+Given a finite graph $$G = (V,E)$$ consisting of $$c_G$$ connected components, the cyclomatic number of $$G$$, denoted $$cy(G)$$, is defined by
+\begin{equation}
+cy(G)=|E|−|V|+c_G
+\end{equation}
 
 ### Exercise:
-Show that if a tree $$T$$ has five or more vertices and no vertex of degree 2, then $$T$$ has at least two disjoint pairs of leaves that form cherries of $$T$$.
+1.Show that if a tree $$T$$ has five or more vertices and no vertex of degree 2, then $$T$$ has at least two disjoint pairs of leaves that form cherries of $$T$$.
 
 *Proof:*  To prove this we first exhibit a fact about tree: *Any tree $$T$$ is either a star tree or it has two interior vertices $$v_1$$ and $$v_2$$, each of which is adjacent to exactly one nonleaf vertex*, this fact can be seen by considering the endpoints of the longest path formed by interior vertices.
 
  If it is a star tree, then it has more than 4 leaves, say, four of them are $$v_1,v_2,v_3,v_4$$, and $$\{v_1,v_2\}$$ and $$\{v_3,v_4\}$$ are two disjoint pairs of leaves that form cherries. If it is not a star tree, then by the fact above we have $$v_1$$ and $$v_2$$ that each of them is adjacent to exactly one nonleaf vertex, since we have no vertex of degree 2, each of $$v_1$$ and $$v_2$$ has at least 2 adjacent leaves, in other words, 2 cherries that shares no common vertex.$$ \blacksquare $$
+
+2. Show that if $$\mathscr{P}= \{T1,T2,...,Tk\}$$ is a collection of subtrees of $$T$$, and each tree in contains strictly more than half the leaves of $$T$$ , then there is a vertex common to all trees in $$\mathscr{P}$$.
+
+*Proof:* This is a direct corolloary of Helly Property. $$\blacksquare$$
 
