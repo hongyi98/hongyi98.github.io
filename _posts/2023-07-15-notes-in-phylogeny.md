@@ -40,7 +40,8 @@ cy(G)=|E|−|V|+c_G
 
 Notice that $$cy(G) = 0$$ if and only if $$G$$ is a forest (i.e., a tree or a disjoint union of two or more trees), while, in general, $$cy(G)$$ is the minimum number of edges that need to be removed from $$G$$ in order to make it acyclic, so it is sometimes called the *circuit rank* of $$G$$ 
 
-For a graph $$G′$$, let $$\omega(G′)$$ be the number of vertices in the largest clique in $$G′$$. Then the treewidth of $$G$$: $$tw(G)$$ is the minimal value of $$\omega(G′) − 1$$ over all chordal graphs $$G′$$ obtained from $$G$$ by adding zero or more edges. For example, since a tree is (trivially) a chordal graph, it follows that a connected graph $$G$$ is a tree if and only if $$tw(G) = 1$$.
+For a graph $$G'$$, let $$\omega(G')$$ be the number of vertices in the largest clique in $$G′$$. Then the treewidth of $$G$$: $$tw(G)$$ is the minimal value of $$\omega(G') − 1$$ over all chordal graphs $$G'$$ obtained from $$G$$ by adding zero or more edges. For example, since a tree is (trivially) a chordal graph, it follows that a connected graph $$G$$ is a tree if and only if $$tw(G) = 1$$.
+
 ### Exercise:
 1.Show that if a tree $$T$$ has five or more vertices and no vertex of degree 2, then $$T$$ has at least two disjoint pairs of leaves that form cherries of $$T$$.
 
