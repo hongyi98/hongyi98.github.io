@@ -40,7 +40,7 @@ cy(G)=|E|−|V|+c_G
 
 Notice that $$cy(G) = 0$$ if and only if $$G$$ is a forest (i.e., a tree or a disjoint union of two or more trees), while, in general, $$cy(G)$$ is the minimum number of edges that need to be removed from $$G$$ in order to make it acyclic, so it is sometimes called the *circuit rank* of $$G$$ 
 
-For a graph $$G'$$, let $$\omega(G')$$ be the number of vertices in the largest clique in $$G′$$. Then the treewidth of $$G$$: $$tw(G)$$ is the minimal value of $$\omega(G') − 1$$ over all chordal graphs $$G'$$ obtained from $$G$$ by adding zero or more edges. For example, since a tree is (trivially) a chordal graph, it follows that a connected graph $$G$$ is a tree if and only if $$tw(G) = 1$$.
+For a graph $$G'$$, let $$\omega(G')$$ be the number of vertices in the largest clique in $$G'$$. Then the treewidth of $$G$$: $$tw(G)$$ is the minimal value of $$\omega(G') − 1$$ over all chordal graphs $$G'$$ obtained from $$G$$ by adding zero or more edges. For example, since a tree is (trivially) a chordal graph, it follows that a connected graph $$G$$ is a tree if and only if $$tw(G) = 1$$.
 
 ### Exercise:
 1.Show that if a tree $$T$$ has five or more vertices and no vertex of degree 2, then $$T$$ has at least two disjoint pairs of leaves that form cherries of $$T$$.
@@ -49,7 +49,8 @@ For a graph $$G'$$, let $$\omega(G')$$ be the number of vertices in the largest 
 
  If it is a star tree, then it has more than 4 leaves, say, four of them are $$v_1,v_2,v_3,v_4$$, and $$\{v_1,v_2\}$$ and $$\{v_3,v_4\}$$ are two disjoint pairs of leaves that form cherries. If it is not a star tree, then by the fact above we have $$v_1$$ and $$v_2$$ that each of them is adjacent to exactly one nonleaf vertex, since we have no vertex of degree 2, each of $$v_1$$ and $$v_2$$ has at least 2 adjacent leaves, in other words, 2 cherries that shares no common vertex.$$ \blacksquare $$
 
-2. Show that if $$\mathscr{P}= \{T1,T2,...,Tk\}$$ is a collection of subtrees of $$T$$, and each tree in contains strictly more than half the leaves of $$T$$ , then there is a vertex common to all trees in $$\mathscr{P}$$.
+
+2.Show that if $$\mathscr{P}= \{T1,T2,...,Tk\}$$ is a collection of subtrees of $$T$$, and each tree in contains strictly more than half the leaves of $$T$$ , then there is a vertex common to all trees in $$\mathscr{P}$$.
 
 *Proof:* This is a direct corolloary of Helly Property. $$\blacksquare$$
 
